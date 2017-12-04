@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício numero 15 - Logica</title>
+</head>
+<body>
+    <script>
+    // 15. Faça um programa que receba 4 notas de um aluno, calcule e imprima a média aritmética das notas e a mensagem de APROVADO para média superior ou igual a 7,0 RECUPERAÇÃO para notas entre 5.0 e 7,0 ou a mensagem de REPROVADO para média inferior a 5,0.
+        var nota1 = prompt("digite uma nota");
+        var nota2 = prompt("digite uma nota");
+        var nota3 = prompt("digite uma nota");
+        var nota4 = prompt("digite uma nota");
+        var mediaNotas = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4)) / 4;
+
+        if(mediaNotas >= 7){
+            document.write("Sua nota é " + mediaNotas + " e vc está aprovado");        
+        }else if(mediaNotas >=5 && mediaNotas <7){
+            document.write("Sua nota é " + mediaNotas + " e vc está de recuperação");
+        }else if(mediaNotas < 5){
+            document.write("Sua nota é " + mediaNotas + " e vc está reprovado");
+        };
+
+       
+    </script>
+</body>
+</html>

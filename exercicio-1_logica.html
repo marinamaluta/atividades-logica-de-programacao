@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Faça um programa que receba a idade de uma pessoa em anos e imprima essa idade em: Meses, Dias, Horas, Minutos.
+    
+    // Primeira Opção:
+       var idade = prompt("quantos anos você tem?");
+       var meses = (idade * 12);
+       var dias = (meses * 365);
+       var minutos = (dias *1440);
+
+document.write(meses + " meses" + " - " + dias + " dias" + " - " + minutos + " minutos");
+
+// Segunda Opção:
+    var i = prompt("quantos anos vc tem?");
+    var idade ={
+        anos:i,
+        meses:i*12,
+        dias:i*12*365,
+        minutos:i*12*365*1440
+    };
+
+    document.write(idade.meses + " meses" + " - " +idade.dias + " dias" + " - " + idade.minutos + " minutos");
+
+
+    </script>
+</body>
+</html>
