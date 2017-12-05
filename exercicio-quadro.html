@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Elabore um programa que solicite um numero 1 e 12. Você deve validar com if simples. Exiba o mês correspondente por extenso, utilizando a estrutura if composto.  
+    
+var mes = parseInt(prompt("Digite um numero de 1 a 12"));
+if(mes >=1 && mes <13){
+    //validar os meses
+    // simples: if; else
+    // composto: else if
+    // encadeado: uma condição dentro da outra.
+    if(mes == 1){
+        alert("Janeiro");
+    }else if(mes == 2){
+        alert("Fevereiro");
+    }else if(mes == 3){
+        alert("Março");
+    }else if(mes == 4){
+        alert("Abril");
+    }else if(mes == 5){
+        alert("Maio");
+    }else if(mes == 6){
+        alert("Junho");
+    }else if(mes == 7){
+        alert("Julho");
+    }else if(mes == 8){
+        alert("Agosto");
+    }else if(mes == 9){
+        alert("Setembro")
+    }else if(mes == 10){
+        alert("Outubro");
+    }else if(mes == 11){
+        alert("Novembro");
+    }else if(mes == 12){
+        alert("Dezembro");
+    }
+}
+    else{
+        alert("Digite um numero entre 1 e 12");
+    }
+    </script>
+</body>
+</html>

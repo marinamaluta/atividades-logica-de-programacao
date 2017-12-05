@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var preco = parseFloat(prompt("qual o preço?"));
+        var codigo = prompt("qual o codigo de origem?");
+        var p = "procedencia";
+
+
+        if(codigo == 1){
+            console.log( p + " sul");
+        }else if(codigo == 2){
+            console.log( p + " norte");
+        }else if(codigo == 3){
+            console.log( p + " leste");
+        }else if (codigo == 4){
+            console.log( p + " oeste");
+        }else if (codigo == 5 || codigo == 6){
+            console.log (p + " nordeste");
+        }else if (codigo == 7 || codigo == 8 || codigo == 9){
+            console.log (p + " sudeste");
+        }else if (codigo >= 10 && codigo <= 20){
+            console.log (p + "  centro-oeste");
+        }else if (codigo >= 21 && codigo <= 30){
+            console.log (p + "  sem definição");
+        } else{
+            console.log ("codigo não cadastrado");
+        };
+
+console.log(codigo);
+
+    </script>
+    
+</body>
+</html>
