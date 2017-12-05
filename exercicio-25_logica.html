@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício numero 25 - Logica</title>
+</head>
+<body>
+    <script>
+    // 25. Uma certa firma fez uma pesquisa de mercado para saber se as pessoas gostaram ou não de um determinado produto lançado. Para isso forneceu o sexo do entrevistado e sua resposta (sim ou não). Sabendo que foram entrevistadas 10 pessoas, faça um programa que calcule e imprima: 
+    // a. O número de pessoas que responderam SIM; 
+    // b. O número de pessoas que responderam NÃO; 
+    // c. O número de mulheres que responderam SIM; 
+    // d. A porcentagem de homens que responderam NÃO entre todos os homens analisados
+    
+    var femininoSim = 0;
+    var femininoNao = 0;
+    var masculinoSim = 0;
+    var masculinoNao = 0;
+    
+
+for (var cont=1; cont<=10; cont++){
+    var sexo = parseInt(prompt("Qual seu sexo? \n 0=feminino \n 1=masculino"));
+    var produto = parseInt(prompt("Você gostou do produto lançado? \n 0=sim \n 1=nao"));
+    if(sexo == "0"){
+        if(produto == "0"){
+            femininoSim++;
+        }else{
+            femininoNao++;
+        }
+    }else if(sexo == "1"){
+        if(produto == "0"){
+            masculinoSim++;
+        }else{
+            masculinoNao++;
+        }  
+    }
+}
+
+    var masculino = parseInt(masculinoSim + masculinoNao);  
+    document.write("As pessoas que responderam sim foi: " + femininoSim + masculinoSim + "<br>");
+    document.write("As pessoas que responderam não foi: " + femininoNao + masculinoNao + "<br>");
+    document.write("As mulheres que responderam sim foi: " + femininoSim + "<br>");
+    document.write("A porcentagem de homens que responderam não foi: " +  (masculino / masculinoNao) * 0.1 + "<br>");
+
+
+
+
+    </script>
+</body>
+</html>
