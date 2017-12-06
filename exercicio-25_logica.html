@@ -42,7 +42,8 @@ for (var cont=1; cont<=10; cont++){
     document.write("As pessoas que responderam sim foi: " + femininoSim + masculinoSim + "<br>");
     document.write("As pessoas que responderam não foi: " + femininoNao + masculinoNao + "<br>");
     document.write("As mulheres que responderam sim foi: " + femininoSim + "<br>");
-    document.write("A porcentagem de homens que responderam não foi: " +  (masculino / masculinoNao) * 0.1 + "<br>");
+    document.write("A porcentagem de homens que responderam não foi: " + parseInt(masculinoNao * 0.1) / masculino + "<br>";
+
 
 
 
