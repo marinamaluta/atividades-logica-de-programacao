@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   
+   function soma(a,b){
+       var resultadoSoma = a + b;
+       return resultadoSoma;
+   }
+
+   function subtrair(a,b){
+        var resultadoSubtracao = a - b;
+        return resultadoSubtracao;
+   }
+    function multiplicacao(a,b){
+        var resultadoMultiplicacao = a * b;
+        return resultadoMultiplicacao;
+    }
+
+    function divisao(a,b){
+        var resultadoDivisao = a / b;
+        return resultadoDivisao;
+   }
+
+   var x = parseInt(prompt("Digite o primeiro número"));
+   var y = parseInt(prompt("Digite o segundo número"));
+   var operacao = prompt("Escolha a operação: \n adição:1, \n subtração:2, \n multiplicação:3, \n divisão:4");
+
+    if (operacao == "1"){
+        document.write(soma(x, y));
+    }else if(operacao == "2"){
+        document.write(subtrair(x, y));
+    }else if(operacao == "3"){
+        document.write(multiplicacao(x, y));
+    }else if(operacao == "4"){
+        document.write(divisao(x,y));
+    }else{
+        document.write("Operação inválida");
+    }
+
+   </script>
+</body>
+</html>

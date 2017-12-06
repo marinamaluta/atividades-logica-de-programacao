@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+
+
+var x        = prompt("Digite o primeiro número");
+
+var y        = prompt("Digite o segundo número");
+
+
+
+var txtOperacao     = "Escolha a operação: ";
+
+    txtOperacao     = txtOperacao + "\nAdição: 1";
+
+    txtOperacao    +="\nSubtração: 2";
+
+    txtOperacao    +="\nMultiplicação: 3";
+
+    txtOperacao    +="\ndivisão: 4";
+
+
+
+var operacao = parseInt( prompt(txtOperacao) );
+
+    switch (operacao) {
+
+        case 1:
+
+            document.write("O resultado da adição é : " + somar(x, y));
+
+            break;
+
+        case 2:
+
+            document.write("O resultado da subtração é: " + somar(x, y));
+
+            break;
+
+        case 3:
+
+            document.write("O resultado da multiplicação é: " + multiplicar(x, y));
+
+            break;
+
+        case 4:
+
+            document.write("O resultado da divisão é: " + dividir(x, y));
+
+            break;
+
+        default:
+
+            break;
+
+    }
+
+    </script>

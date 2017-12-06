@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício numero 37 - Logica </title>
+</head>
+<body>
+    <script>
+//37. Faça um programa que contenha um vetor de 10 elementos. Solicite ao usuário que digite números pares, inteiros, e os guarde no vetor. 
+//Para isso utilize a estrutura de repetição ENQUANTO. Ao final, exiba todos os valores com a estrutura de repetição PARA. . 
+    
+    var elementos = [];
+    var i = 0;
+
+while(elementos.length < 10){
+    elementos[i] = parseInt(prompt("Digite um numero par e inteiro"));
+    if(elementos[i] %2 == 0){
+        i++;
+    }
+}
+
+console.log(elementos);
+    
+    </script>
+</body>
+</html>
+
+
